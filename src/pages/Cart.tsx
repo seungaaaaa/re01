@@ -24,9 +24,9 @@ const Cart: React.FC = () => {
                         cart.map(item => (
                             <li key={item.product.id} className={styles.outBox}>
                                 <img src={item.product.image} alt={item.product.title} className={styles.img} />
-                                <div className="info">
+                                <div className={styles.info}>
                                     <h3>{item.product.title}</h3>
-                                    <h4>{(item.qty * item.product.price).toLocaleString()}원</h4>
+                                    <div>{(item.qty * item.product.price).toLocaleString()}원</div>
                                     <div className={styles.btns}>
                                         <button className={styles.btn} onClick={() => dec(item.product.id)}>-</button>
                                         <span>{item.qty}</span>
@@ -39,8 +39,8 @@ const Cart: React.FC = () => {
                     }
                 </ul>
                 <div className={styles.totalBox}>
-                    <div><strong>총 수량:</strong> {totalCount}<strong>개</strong></div>
-                    <div><strong>총 금액:</strong> {totalPrice.toLocaleString()}<strong>원</strong></div>
+                    <div className={styles.totalC}>총 수량: <strong>{totalCount}</strong>개</div>
+                    <div>총 금액: <strong>{totalPrice.toLocaleString()}</strong>원</div>
                     <button className={styles.clear} onClick={() => clear()}>전체 비우기</button>
                 </div>
             </div>

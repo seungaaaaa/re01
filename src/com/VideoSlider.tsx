@@ -33,11 +33,9 @@ const VideoSlider: React.FC<Props> = ({ slides, intervalMs = 6000, autoplay = tr
     return (
         <div className={styles.videoslider}>
             <video
-                key={kkk.src}
                 className={styles.video}
                 src={kkk.src}
-                autoPlay muted loop
-                playsInline
+                autoPlay muted loop playsInline
             />
 
             <div className={styles.overlay} key={index}>

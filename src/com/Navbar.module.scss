@@ -3,6 +3,7 @@
 
 .navbar {
     position: sticky;
+    height: 75px;
     top: 0;
     z-index: 100;
     display: flex;
@@ -27,8 +28,8 @@
 
     .menuList {
         @include m.flex-center;
-        gap: v.$gap;
-        margin-right: 30px;
+        gap: 30px;
+        margin-right: 80px;
 
 
         @include m.respond(v.$bp-md) {
@@ -49,17 +50,17 @@
         }
 
         .active {
-            color: v.$main-color;
+            color: #A85F5F;
 
             &::after {
                 content: '';
                 position: absolute;
                 left: 10px;
                 right: 10px;
-                bottom: 1px;
-                height: 2px;
+                bottom: 0;
+                height: 1px;
                 border-radius: 2px;
-                background-color: #333;
+                background-color: #A85F5F;
             }
         }
     }

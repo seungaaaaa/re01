@@ -23,7 +23,7 @@ const Contact: React.FC = () => {
 
     return (
         <div className={styles.contact}>
-            <h2>상품후기</h2>
+            <h1>상품후기</h1>
             <div className={styles.reviewBox}>
                 {
                     review.map(item => (

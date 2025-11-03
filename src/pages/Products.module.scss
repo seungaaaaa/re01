@@ -7,28 +7,34 @@
 
     h1 {
         text-align: center;
-        margin-bottom: 50px;
-        padding-top: 50px;
+        padding-top: 10px;
     }
 }
 
 .gridBox {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    gap: 30px;
+    width: 60%;
+    margin: 0 auto;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    gap: 10px;
+    padding-bottom: 30px;
 }
 
 .card {
-    width: 330px;
+    width: 300px;
     height: 500px;
     @include m.flex-column-center;
     border-radius: 10px;
+    overflow: hidden;
     transition: all 0.4s linear;
     margin-top: 50px;
+    box-shadow: 2px 2px 8px rgba(140, 114, 115, 0.2);
 
     &:hover {
         transform: translateY(-2px);
-        box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+
+        box-shadow: 1px 1px 10px rgba(140, 114, 115, 0.8);
     }
 }
 
@@ -52,7 +58,7 @@
     margin-bottom: 20px;
 
     &:hover {
-        background-color: #555;
+        background-color: #8C7273;
         color: white
     }
 }
@@ -70,7 +76,8 @@
     border-radius: 5px;
 
     &:hover {
-        background-color: #555;
+        background-color: #8C7273;
+        ;
         color: white
     }
 }

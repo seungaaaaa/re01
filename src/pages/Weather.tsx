@@ -15,6 +15,7 @@ const Weather = () => {
     const [weather, setWeather] = useState<WeatherData | null>(null)
     const [error, setError] = useState<string | null>(null)
     const [time, setTime] = useState<string>("")
+    const [time2, setTime2] = useState<string>("")
     const API_KEY = '258396f85afb2d7144f0562c0a7c6401'
     const KAKAO_KEY = '343e0b5f075239e9cdfa0bd02756e176'
 
@@ -26,11 +27,15 @@ const Weather = () => {
                 month: 'long',
                 day: 'numeric',
                 weekday: 'long',
+            })
+
+            const formatTime2 = now.toLocaleTimeString('ko-KR', {
                 hour: '2-digit',
-                minute: '2-digit'
+                minute: '2-digit',
             })
 
             setTime(formatTime)
+            setTime2(formatTime2)
         }
 
         updateTime()
@@ -96,16 +101,19 @@ const Weather = () => {
 
     return (
         <div className={styles.weather}>
-            <p className={styles.time}>{time}</p>
-            <div className={styles.wBox}>
-                <h2>{weather.city}</h2>
-                <h3>{weather.temp}º</h3>
-                <div className={styles.desc}>
-                    <img src={`https://openweathermap.org/img/wn/${weather.icon}@2x.png`} alt="" />
-                    <h3>{weather.desc}</h3>
+            <div className={styles.textBox}>
+                <div className={styles.today}>오늘 날씨</div>
+                <p className={styles.time}>{time}<br />{time2}</p>
+                <div className={styles.wBox}>
+                    <h2>{weather.city}</h2>
+                    <h3>{weather.temp}º</h3>
+                    <div className={styles.desc}>
+                        <img src={`https://openweathermap.org/img/wn/${weather.icon}@2x.png`} alt="" />
+                        <h3>{weather.desc}</h3>
+                    </div>
                 </div>
             </div>
-            <div id="map" className={styles.map}>지도가 나타날꺼임</div>
+            <div id="map" className={styles.map}>지도</div>
         </div>
     )
 }

@@ -2,19 +2,21 @@
 
 .h2 {
     text-align: center;
-    padding-top: 50px;
+    padding-top: 30px;
 }
 
 .container {
     display: flex;
     flex-direction: column;
-    margin-top: 100px;
+    padding-top: 20px;
 }
 
 .ul {
-    width: 100%;
-    @include m.flex-center;
-    gap: 50px;
+    margin: 0 auto;
+    width: 70%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
 }
 
 .outBox {
@@ -23,10 +25,11 @@
     transition: all 0.4s linear;
     border-radius: 10px;
     padding: 10px;
+    box-shadow: 2px 2px 8px rgba(140, 114, 115, 0.3);
 
     &:hover {
-        transform: translateY(-5px);
-        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+        transform: translateY(-2px);
+        box-shadow: 1px 1px 10px rgba(140, 114, 115, 0.8);
     }
 }
 
@@ -36,11 +39,17 @@
     object-fit: cover;
 }
 
+.info {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 10px;
+}
+
 .btns {
     display: flex;
     gap: 20px;
-
-
+    margin-top: 10px;
 }
 
 .btn {
@@ -49,7 +58,8 @@
     border-radius: 5px;
 
     &:hover {
-        background-color: #555;
+        background-color: #8C7273;
+        ;
         color: white
     }
 }
@@ -63,15 +73,20 @@
     cursor: pointer;
 
     &:hover {
-        background-color: #555;
+        background-color: #8C7273;
+        ;
         color: white
     }
 }
 
 .totalBox {
     text-align: center;
-    margin-top: 100px;
+    margin-top: 50px;
     font-size: 18px;
+
+    .totalC {
+        margin-bottom: 10px;
+    }
 }
 
 .clear {
@@ -79,10 +94,11 @@
     border-radius: 10px;
     border: 1px solid #CCC;
     cursor: pointer;
-    margin-top: 20px;
+    margin-top: 25px;
 
     &:hover {
-        background-color: #555;
+        background-color: #8C7273;
+        ;
         color: white
     }
 }
