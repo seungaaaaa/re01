@@ -11,7 +11,7 @@
         "id": 2,
         "title": "미니 선풍기",
         "price": 14900,
-        "image": "imgs/img_01.jpg",
+        "image": "imgs/img_02.jpg",
         "category": "home",
         "desc": "휴대용으로 어디서든 시원하게 사용할 수 있는 미니 선풍기입니다."
     },
@@ -19,7 +19,7 @@
         "id": 3,
         "title": "USB 케이블 C타입",
         "price": 5900,
-        "image": "imgs/img_02.jpg",
+        "image": "imgs/img_03.jpg",
         "category": "digital",
         "desc": "빠른 충전과 안정적인 데이터 전송을 지원하는 고속 USB-C 케이블."
     },
@@ -27,7 +27,7 @@
         "id": 4,
         "title": "LED 탁상 스탠드",
         "price": 19900,
-        "image": "imgs/img_03.jpg",
+        "image": "imgs/img_04.jpg",
         "category": "home",
         "desc": "눈이 편안한 조명, 밝기 조절 가능한 모던 디자인의 LED 스탠드."
     },
@@ -35,7 +35,7 @@
         "id": 5,
         "title": "무선 블루투스 이어폰",
         "price": 29900,
-        "image": "imgs/img_04.jpg",
+        "image": "imgs/img_05.jpg",
         "category": "digital",
         "desc": "고음질 사운드와 안정적인 연결, 장시간 착용에도 편안한 무선 이어폰."
     }
