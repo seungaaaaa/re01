@@ -1,0 +1,66 @@
+@use '../assets/scss/var' as v;
+@use '../assets/scss/mixin' as m;
+
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: saturate(180%) blur(8px);
+
+
+    .logo {
+        font-weight: bold;
+        font-size: clamp(16px, 2.5vw, 25px);
+        letter-spacing: 0.2px;
+        color: v.$text-dark;
+        padding: 5px;
+        margin-left: 30px;
+
+        @include m.respond(v.$bp-md) {
+            margin-left: 5px;
+        }
+    }
+
+    .menuList {
+        @include m.flex-center;
+        gap: v.$gap;
+        margin-right: 30px;
+
+
+        @include m.respond(v.$bp-md) {
+            margin-right: 5px;
+        }
+
+        a {
+            padding: 6px 10px;
+            font-weight: 700;
+            color: v.$text-dark;
+            transition: all 0.3s linear;
+            position: relative;
+
+            &:hover {
+                background-color: rgba(0, 0, 0, 0.04);
+                transform: translateY(-1px);
+            }
+        }
+
+        .active {
+            color: v.$main-color;
+
+            &::after {
+                content: '';
+                position: absolute;
+                left: 10px;
+                right: 10px;
+                bottom: 1px;
+                height: 2px;
+                border-radius: 2px;
+                background-color: #333;
+            }
+        }
+    }
+}
