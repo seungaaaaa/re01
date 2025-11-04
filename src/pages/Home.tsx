@@ -4,9 +4,9 @@ import styles from './Home.module.scss'
 const Home = () => {
 
     let slides = [
-        { src: 'mov/mov01.mp4', title: 'Welcome to Our Site', subtitle: 'TypeScript로 만든 포트폴리오에 오신 것을 환영합니다' },
-        { src: 'mov/mov02.mp4', title: 'Clean & Robust', subtitle: "TypeScript와 React로 견고하고 유지보수 쉬운 코드를 구현했습니다" },
-        { src: 'mov/mov03.mp4', title: "Interactive Experience", subtitle: '사용자 친화적 UI와 인터랙티브한 기능으로 경험을 제공합니다.' },
+        { src: 'mov/mov01.mp4', title: 'Welcome to My Portfolio', subtitle: '포트폴리오 사이트에 오신 걸 환영합니다.' },
+        { src: 'mov/mov02.mp4', title: 'React & TypeScript', subtitle: 'React와 TypeScript를 사용해 구조적이고 유지보수가 쉬운 코드를 작성했습니다.' },
+        { src: 'mov/mov03.mp4', title: "Simple Store", subtitle: '상품을 구경하고 장바구니에 담고, 후기까지 볼 수 있는 간단한 사이트입니다.' },
     ]
 
     return (

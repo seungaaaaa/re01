@@ -13,7 +13,7 @@ const Navbar = () => {
 
     return (
         <header className={styles.navbar}>
-            <div className={styles.logo}>TypeScript</div>
+            <div className={styles.logo}>&lt;Seunga /&gt;</div>
             <nav>
                 <ul className={styles.menuList}>
                     {
