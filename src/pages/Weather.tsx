@@ -117,6 +117,12 @@ const Weather = () => {
                 desc: "활동적인 하루를 위한 아이템을 만나보세요.",
                 item: "무선 이어폰"
             })
+        } else if (desc.includes('흐림')) {
+            setMessage({
+                title: "흐린 하루🌫️",
+                desc: "은은한 향기와 촉촉한 공기로 기분 전환해보세요..",
+                item: "아로마 가습기"
+            })
         } else if (desc.includes('구름')) {
             setMessage({
                 title: "구름 낀 하루☁️",
@@ -128,6 +134,12 @@ const Weather = () => {
                 title: "눈 오는 날❄️",
                 desc: "따뜻한 감성을 채워줄 홈 아이템을 만나보세요.",
                 item: "플러피 쿠션 커버"
+            })
+        } else if (desc.includes('바람')) {
+            setMessage({
+                title: "바람 부는 날💨",
+                desc: "눈에는 눈, 바람에는 바람! 오늘은 선풍기로 맞서보세요.",
+                item: "미니 선풍기"
             })
         } else {
             setMessage({
