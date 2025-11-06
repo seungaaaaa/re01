@@ -1,11 +1,11 @@
-import { NavLink } from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom'
 import styles from './Navbar.module.scss'
 
 const Navbar = () => {
 
     let menus = [
         { name: '홈', path: '/home' },
-        { name: '날씨', path: '/weather' },
+        { name: '내 위치 & 날씨', path: '/weather' },
         { name: '상품소개', path: '/products' },
         { name: '장바구니', path: '/cart' },
         { name: '후기', path: '/contact' }
@@ -13,7 +13,8 @@ const Navbar = () => {
 
     return (
         <header className={styles.navbar}>
-            <div className={styles.logo}>Item4U</div>
+            <div className={styles.logo}>
+                <Link to='/home'>Item4U</Link> </div>
             <nav>
                 <ul className={styles.menuList}>
                     {
