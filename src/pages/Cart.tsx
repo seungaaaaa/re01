@@ -16,7 +16,7 @@ const Cart: React.FC = () => {
     }
 
     return (
-        <div>
+        <div className={styles.cart}>
             <h1 className={styles.h2}>장바구니</h1>
             <div className={styles.container}>
                 <ul className={styles.ul}>
