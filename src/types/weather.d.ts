@@ -33,3 +33,9 @@ export interface WeatherData {
     icon: string
     desc: string
 }
+
+export interface WeatherMsg {
+    title: string,
+    desc: string,
+    item: string
+}

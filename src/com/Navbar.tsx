@@ -13,14 +13,14 @@ const Navbar = () => {
 
     return (
         <header className={styles.navbar}>
-            <div className={styles.logo}>&lt;Seunga /&gt;</div>
+            <div className={styles.logo}>Item4U</div>
             <nav>
                 <ul className={styles.menuList}>
                     {
                         menus.map((item) => (
                             <li key={item.path}>
                                 <NavLink to={item.path}
-                                    className={({ isActive }) => isActive ? styles.active : undefined}  // 클릭을 햇으면 true로 active클래스 적용
+                                    className={({ isActive }) => isActive ? styles.active : undefined}
                                 >{item.name}</NavLink>
                             </li>
                         ))

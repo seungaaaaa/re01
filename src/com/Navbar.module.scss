@@ -3,7 +3,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500;700&display=swap');
 
 .navbar {
-    position: sticky;
+    position: fixed;
+    width: 100%;
     height: 75px;
     top: 0;
     z-index: 100;
@@ -23,6 +24,7 @@
         padding-left: 10px;
         margin-left: 30px;
         font-family: 'Raleway', sans-serif;
+        text-shadow: 1px 1px 5px rgba(140, 114, 115, 0.8);
 
         @include m.respond(v.$bp-md) {
             margin-left: 5px;
